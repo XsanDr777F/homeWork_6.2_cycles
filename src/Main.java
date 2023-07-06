@@ -111,9 +111,10 @@ public class Main {
     public static void task_8() {
         System.out.println("Задача 8");
         int year = 0;
-        for (; year <= 2100; year += 79) {
-            if (year>1800 && year <2100)
-            System.out.println(year);
+        for (; year <= 2123; year += 79) {
+            if (year > 1823 && year < 2123) {
+                System.out.println(year);
+            }
         }
 
     }
