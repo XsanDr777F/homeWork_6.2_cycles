@@ -46,11 +46,11 @@ public class Main {
         System.out.println("Задача 3");
 
         int people = 12_000_000;
-        int birth = 17_000;
-        int death = 8_000;
+        float birth = (float) 17/1000;
+        float death = (float) 8/1000;
 
         for (int i = 1; i <= 10; i++) {
-            people = people + birth - death;
+            people = (int) (people + (people*birth) - (people*death));
             System.out.println("Год " + i + ", численность населения составляет " + people);
         }
 
